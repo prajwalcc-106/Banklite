@@ -1,0 +1,243 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.backBtn {
+  background: #f0f0f0;
+  color: #333;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+  margin-bottom: 15px;
+}
+
+.backBtn:hover {
+  background: #e0e0e0;
+  transform: translateX(-3px);
+}
+
+.header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.loading,
+.error {
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.loading {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.error {
+  background: #fee;
+  color: #c33;
+  border-left: 4px solid #c33;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  margin: 0 0 20px;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+
+.detailItem label {
+  font-size: 0.85rem;
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.detailItem .value {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.riskCard {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 30px;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.riskCard.safe {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.riskCard.medium {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.riskCard.highRisk {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.riskScore {
+  flex: 0 0 auto;
+}
+
+.scoreCircle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+}
+
+.scoreText {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.scoreLabel {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.riskInfo {
+  flex: 1;
+}
+
+.riskInfo h3 {
+  margin: 0 0 10px;
+  font-size: 1.3rem;
+}
+
+.riskInfo p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+.commentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.commentBox label {
+  font-weight: 600;
+  color: #333;
+}
+
+.commentBox textarea {
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+.commentBox textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.commentBox textarea:disabled {
+  background: #f5f5f5;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.charCount {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  min-width: 150px;
+  padding: 15px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.approveBtn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+}
+
+.approveBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+}
+
+.rejectBtn {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+}
+
+.rejectBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);
+}
+
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}

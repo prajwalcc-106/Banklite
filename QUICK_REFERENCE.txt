@@ -1,0 +1,45 @@
+# 🎯 QUICK START CARD - Copy This!
+
+## DO THIS IN ORDER:
+
+### 1. Start MySQL (Command Prompt as Admin)
+```
+net start MySQL80
+mysql -u root -p
+```
+Inside MySQL:
+```
+SOURCE C:\Users\prajw\Documents\E_BOX\236097-43891-663\schema.sql;
+EXIT;
+```
+
+### 2. Start Backend (PowerShell 1)
+```
+cd "C:\Users\prajw\Documents\E_BOX\236097-43891-663\banklite-backend"; python app.py
+```
+
+### 3. Start Frontend (PowerShell 2)
+```
+cd "C:\Users\prajw\Documents\E_BOX\236097-43891-663\banklite-frontend"; python -m http.server 8000
+```
+
+### 4. Open Browser
+```
+http://localhost:8000
+```
+
+### 5. Login
+**Customer:**
+- Email: customer@test.com
+- Password: customer123
+
+**Officer:**
+- Email: officer@test.com  
+- Password: officer123
+
+---
+
+## KEEP ALL 3 TERMINALS OPEN!
+- Command Prompt (MySQL)
+- PowerShell 1 (Backend)
+- PowerShell 2 (Frontend)

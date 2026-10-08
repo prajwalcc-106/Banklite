@@ -1,0 +1,157 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.loading,
+.error {
+  padding: 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.loading {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.error {
+  background: #fee;
+  color: #c33;
+  border-left: 4px solid #c33;
+}
+
+.statsSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.statCard {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.statCard h3 {
+  margin: 0 0 15px;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.statNumber {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.chartSection {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.chartSection h2 {
+  margin: 0 0 20px;
+  color: #333;
+}
+
+.loansSection {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loansSection h2 {
+  margin: 0 0 20px;
+  color: #333;
+}
+
+.noLoans {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background: #f5f5f5;
+  font-weight: 600;
+  color: #333;
+}
+
+.table th,
+.table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table tbody tr:hover {
+  background: #fafafa;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.riskBadge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.safe {
+  background: #d4edda;
+  color: #155724;
+}
+
+.medium {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.highRisk {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.reviewBtn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.reviewBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
